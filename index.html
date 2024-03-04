@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=, initial-scale=1.0"/>
+    <title>Encriptador De Texto</title>
+    <link rel="stylesheet" href="stylechall.css"/>
+ </head>
+ <body>
+    <div class="container"> 
+      <div class="encriptar">
+        <img src="img/Logo.png">
+        <textarea
+         name="texto" 
+         class="texto"
+         id="texto"
+         cols="30"
+         rows="10"
+         placeholder="Ingresa el texto aqui"
+        ></textarea>
+          
+        <div class="condiciones">
+          <p class="Exclamation Mark">&excl; Solo letras minusuclas sin caracteres especiales</p>
+        </div>
+        <div class="botones">
+          <button class="btn-encriptar" type= "button" onclick= "encriptar()">
+            Encriptar
+          </button>
+          <input
+             type="button"
+             class="btn-desencriptar"
+             value="Desencriptar"
+             onclick="desencriptar()"
+          />
+        </div>
+      </div>    
+      <div class="encriptado">
+        <img src="img/Muñeco.png" alt="" id="personaje">
+        <div class="mensaje-encriptado" id="mensaje-encriptado">
+          <h2 id="titulo-mensaje">Ningun mensaje fue encontrado</h2>
+          <p id="parrafo">Ingresa el texto que deseas encriptar o desencriptar</p>
+        </div>  
+      </div>
+    </div>
+</body>
+<script src="chall2.js"></script>
+</html>
